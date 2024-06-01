@@ -1,27 +1,27 @@
 /// <reference types="vitest" />
 
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@": "/src",
+      '@': '/src',
     },
   },
 
   test: {
     globals: true,
-    environment: "jsdom",
+    environment: 'jsdom',
     css: true,
-    setupFiles: ["./vitest.setup.ts"],
-    reporters: ["verbose"],
+    setupFiles: ['./vitest.setup.ts'],
+    reporters: ['verbose'],
     coverage: {
-      reporter: ["text", "json", "html"],
-      include: ["src/**/*"],
-      exclude: ["src/main.tsx"],
+      reporter: ['text', 'json', 'html'],
+      include: ['src/**/*'],
+      exclude: ['src/main.tsx'],
       thresholds: {
         // Thresholds for all files
         functions: 80,
@@ -30,7 +30,7 @@ export default defineConfig({
         autoUpdate: false, // (default)
 
         // Thresholds for particular files e.g. utils
-        "src/utils/**.ts": {
+        'src/utils/**.ts': {
           lines: 100,
           statements: 95,
         },
