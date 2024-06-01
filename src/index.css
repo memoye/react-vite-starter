@@ -4,11 +4,13 @@
 
 @layer base {
   :root {
-    --color-primary: 269deg 91% 41%;
-    --color-primary-2: 257deg 71% 42%;
-    --color-primary-foreground: 0deg 0% 100%;
+    --color-brand: 269deg 91% 41%;
+    --color-brand-100: 257deg 71% 42%;
+    --color-brand-foreground: 0deg 0% 100%;
 
     --color-background: 0deg 0% 100%;
+    --color--foreground: 0deg 0% 0%;
+
     --color-special: 43deg 100% 50%;
   }
 }

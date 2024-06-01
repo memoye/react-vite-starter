@@ -5,11 +5,8 @@ function App() {
     <div>
       Hello World
       <h1>
-        <Logo className="animate-ping" />
+        <Logo color="" />
       </h1>
-      <p>
-        <p>hello</p>
-      </p>
     </div>
   );
 }
