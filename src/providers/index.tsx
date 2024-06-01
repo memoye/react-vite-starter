@@ -1,9 +1,12 @@
 import { HelmetProvider } from 'react-helmet-async';
+import { RouterProvider } from 'react-router-dom';
 
-export default function AllProviders({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return <HelmetProvider>{children}</HelmetProvider>;
+import router from '@/router';
+
+export default function AllProviders() {
+  return (
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
+  );
 }
