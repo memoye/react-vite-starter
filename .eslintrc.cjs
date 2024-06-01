@@ -10,7 +10,6 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'plugin:@typescript-eslint/recommended',
     'eslint-config-prettier',
-    'validate-jsx-nesting',
   ],
   settings: {
     react: {
