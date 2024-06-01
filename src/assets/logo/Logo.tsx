@@ -1,4 +1,5 @@
-import SVGComp, { SVGCompProps } from '@/components/ui/SvgComp';
+import { SVGCompProps } from '@/types/common';
+import SVGComp from '@/components/ui/svg-comp';
 
 export default function Logo({
   color,

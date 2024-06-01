@@ -1,6 +1,4 @@
-export interface SVGCompProps extends React.SVGProps<SVGSVGElement> {
-  size?: number | `${number}`;
-}
+import { SVGCompProps } from '@/types/common';
 
 export default function SVGComp({
   children,

@@ -6,43 +6,18 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
-    'plugin:import/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:@typescript-eslint/recommended',
-    'eslint-config-prettier',
   ],
-  settings: {
-    react: {
-      version: 'detect',
-    },
-    'import/resolver': {
-      alias: {
-        map: [['@', './src']],
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      },
-    },
-    node: {
-      paths: ['src'],
-      extensions: ['.js', '.jsx', '.ts', '.tsx'],
-    },
-  },
   ignorePatterns: ['dist', '.eslintrc.cjs'],
-  parser: '@typescript-eslint/parser',
+  settings: { react: { version: '18.2' } },
   plugins: ['react-refresh'],
   rules: {
+    'react/jsx-no-target-blank': 'off',
+    'react/react-in-jsx-scope': 'off',
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
     ],
-    'no-unused-vars': [
-      'error',
-      {
-        vars: 'all',
-        args: 'after-used',
-        ignoreRestSiblings: true,
-        argsIgnorePattern: '^_',
-      },
-    ],
-    'react/react-in-jsx-scope': 'off',
   },
 };
